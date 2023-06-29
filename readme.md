@@ -1,5 +1,5 @@
 # AdonisJS
-## projeto hello-world
+## projeto Adonis Authentication
 # Dependencias
 ## npm install
 # Rodar projeto
