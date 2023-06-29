@@ -1,9 +1,13 @@
 # AdonisJS
 ## projeto Adonis Authentication
+
 # Dependencias
 ## npm install
+
 # Rodar projeto
+## node ace serve --watch
 ## npm run dev
+
 # Banco de dados
-## (postman=hello_db / Insomnia=CRUD-Adonis)
-## (phpmyadmin=hello_db)
+## (postman=adonis-auth / Insomnia=CRUD-Adonis)
+## (phpmyadmin=adonis-auth)
