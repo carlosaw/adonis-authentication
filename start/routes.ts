@@ -4,8 +4,14 @@ Route.get('/', async () => {
   return { hello: 'world' }
 })
 
-
 Route.post('/login', 'AuthController.login');
-Route.post('/logout', 'AuthController.logout');
-Route.get('/me', 'AuthController.me').middleware('auth');
-Route.get('/private', 'AuthController.private').middleware('auth');
+
+Route.group(()=>{
+  Route.post('/logout', 'AuthController.logout');
+  Route.get('/me', 'AuthController.me');
+  Route.get('/private', 'AuthController.private');
+
+  Route.resource('categories', 'CategorieController').apiOnly();
+  Route.resource('tasks', 'TasksController').apiOnly();
+
+}).middleware('auth');
